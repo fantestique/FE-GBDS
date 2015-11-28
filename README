@@ -1,9 +1,18 @@
 ----------------
-    FE-GBRE
+    FE-GBDS
 ----------------
 Aim to fit the modern Windows compiling and running environment.
 Now it works with Cygwin x86_64 (11.28.2015)
 
+-----initial updates on FE-GBDS-------
+For Compiling in Windows
+
+1. Installing Cygwin if you do not have. https://cygwin.com/install.html
+2. Opening your Cygwin terminal and locate to the source code folder which contains Makefile
+3. Typing command make to compile all the files
+4. Then you will get three executable files. They can be run within Cygwin terminal.
+5. The three exe files can also be run in Windows, but cygwin1.dll is required. cygwin1.dll can be found at %YOUR-CYGWIN-PATH%/bin.
+FE  28.11.2015
 
 
 
