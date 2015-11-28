@@ -346,8 +346,10 @@ lex_AddStrings(struct sLexInitString * lex)
 			ppHash = &((*ppHash)->pNext);
 
 		if (((*ppHash) = malloc(sizeof(struct sLexString))) != NULL) {
+			char* lextzName = (char*)(malloc(strlen(lex->tzName)+1));
+			if(lextzName!=NULL) strcpy(lextzName,lex->tzName);
 			if (((*ppHash)->tzName =
-				(char *) strdup(lex->tzName)) != NULL) {
+				lextzName) != NULL) {
 				(*ppHash)->nNameLength = strlen(lex->tzName);
 				(*ppHash)->nToken = lex->nToken;
 				(*ppHash)->pNext = NULL;
