@@ -431,10 +431,11 @@ sym_AddNewMacroArg(char *s)
 		i += 1;
 
 	if (i < MAXMACROARGS) {
-		if (s)
+		if (s){
 			char* temps= (char*)(malloc(strlen(s)+1));
 			if(temps!=NULL) strcpy(temps,s);
 			newmacroargs[i] = temps;// replace the strdup(s)
+		}
 		else
 			newmacroargs[i] = NULL;
 	} else
