@@ -448,7 +448,9 @@ sym_SetMacroArgID(ULONG nMacroCount)
 	char s[256];
 
 	sprintf(s, "_%ld", nMacroCount);
-	newmacroargs[MAXMACROARGS] = strdup(s);
+	char* temps= (char*)(malloc(strlen(s)+1));
+	if(temps!=NULL) strcpy(temps,s);
+	newmacroargs[MAXMACROARGS] = temps;
 }
 
 void 
