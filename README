@@ -12,7 +12,7 @@ For Compiling in Windows
 2. Opening your Cygwin terminal and locate to the source code folder which contains Makefile
 3. Typing command <make> to compile all the files
 4. Then you will get three executable files. They can be run within Cygwin terminal.
-5. The three exe files can also be run in Windows, but cygwin1.dll is required. cygwin1.dll can be found at %YOUR-CYGWIN-PATH%/bin.
+5. The three exe files can also be run in Windows, but cygwin1.dll is required. cygwin1.dll can be found at %YOUR-CYGWIN-PATH%/bin. Just put it in the same directory as your exe files, or put it into your WINDOWS folder(not test yet).
 FE  28.11.2015
 
 
