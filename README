@@ -8,7 +8,7 @@ TEST
 -----initial updates on FE-GBDS-------
 For Compiling in Windows
 
-1. Installing Cygwin if you do not have. https://cygwin.com/install.html
+1. Installing Cygwin if you do not have. (https://cygwin.com/install.html) During installation, under devel install bison, flex, gcc-g++, gdb and make. 
 2. Opening your Cygwin terminal and locate to the source code folder which contains Makefile
 3. Typing command <make> to compile all the files
 4. Then you will get three executable files. They can be run within Cygwin terminal.
